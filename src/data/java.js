@@ -14,3 +14,6 @@ if (temperature > 30) {
 } else {
     console.log("It's a pleasant day.");
 }
+
+let message = temperature > 30 ? "It's hot outside!" : "It's not so hot.";
+console.log(message);
