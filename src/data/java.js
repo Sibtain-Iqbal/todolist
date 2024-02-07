@@ -52,3 +52,13 @@ while (i < 10) {
     console.log(i);
     i++;
 }
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+const array = [1, 2, 3, 4, 5];
+for (const value of array) {
+    console.log(value);
+}
