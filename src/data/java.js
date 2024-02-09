@@ -62,3 +62,22 @@ const array = [1, 2, 3, 4, 5];
 for (const value of array) {
     console.log(value);
 }
+
+// array
+
+
+
+[
+   
+   
+   
+   
+    {
+      "title": "Object 43",
+      "description": "Description for Object 43."
+    },
+    {
+      "title": "Object 44",
+      "description": "Description for Object 44."
+    }
+]  
