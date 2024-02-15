@@ -323,3 +323,25 @@ for (const value of array) {
     }
 ]  
 
+
+import { useEffect, useState } from 'react';
+import { TodoProvider } from "./Context";
+import TodoForm from './Components/TodoForm'; // Make sure to import TodoForm
+import TodoItem from './Components/TodoItem';
+
+function App() {
+  const [Todos, SetTodo] = useState([]);
+
+
+
+  // local storage
+
+  
+
+
+  return (
+  <></>
+  )
+}
+
+export default App;
