@@ -69,6 +69,30 @@ for (const value of array) {
 
 [
     {
+      "title": "Object 1",
+      "description": "Description for Object 1."
+    },
+    {
+      "title": "Object 2",
+      "description": "Description for Object 2."
+    },
+    {
+      "title": "Object 3",
+      "description": "Description for Object 3."
+    },
+    {
+      "title": "Object 4",
+      "description": "Description for Object 4."
+    },
+    {
+      "title": "Object 5",
+      "description": "Description for Object 5."
+    },
+    {
+      "title": "Object 6",
+      "description": "Description for Object 6."
+    },
+    {
       "title": "Object 7",
       "description": "Description for Object 7."
     },
