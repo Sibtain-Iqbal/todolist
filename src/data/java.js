@@ -340,7 +340,11 @@ function App() {
 
 
   return (
-  <></>
+    <TodoProvider value={{ todos: Todos, addTodo, updateTodo, deleteTodo, toggleComplete }}>
+      <div className="bg-[#172842] min-h-screen py-8">
+      
+      </div>
+    </TodoProvider>
   )
 }
 
