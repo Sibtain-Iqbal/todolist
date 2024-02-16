@@ -243,5 +243,26 @@ for (const value of array) {
     {
       "title": "Object 44",
       "description": "Description for Object 44."
+    },
+    {
+      "title": "Object 45",
+      "description": "Description for Object 45."
+    },
+    {
+      "title": "Object 46",
+      "description": "Description for Object 46."
+    },
+    {
+      "title": "Object 47",
+      "description": "Description for Object 47."
+    },
+    {
+      "title": "Object 48",
+      "description": "Description for Object 48."
+    },
+    {
+      "title": "Object 49",
+      "description": "Description for Object 49."
     }
+  
 ]  
