@@ -347,7 +347,14 @@ function App() {
           <div className="mb-4">
             <TodoForm /> {/* Make sure to use the correct TodoForm component */}
           </div>
-       
+          <div className="flex flex-wrap gap-y-3">
+            {Todos.map((todo) => (
+              <div key={todo.id}>
+                <TodoItem todo={todo} />
+                {/* <div/> */}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </TodoProvider>
