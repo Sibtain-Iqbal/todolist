@@ -322,10 +322,33 @@ for (const value of array) {
 
     }
 ]  
-let [formdata , setFormData] = useState({
-  myname,
-  yourEmail,
-  phonename,
-  message,
-  index : ''
-})
+
+
+import logo from './logo.svg';
+import './App.css';
+import { useState } from 'react';
+
+function App() {
+  // let changedata =(e)=>{
+  //   setiname(e.target.value)
+
+  // }
+
+
+
+  let [usedata,setUserData] = useState([])
+
+  const getValue = (e)=>{
+
+  }
+let handlesubmit = (e)=>{
+
+}
+  return (
+    <div className="App">
+    
+    </div>
+  );
+}
+
+export default App;
