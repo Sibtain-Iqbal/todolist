@@ -336,7 +336,12 @@ function App() {
 
   // local storage
 
-  
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("todos"));
+
+    if (todos && todos.length > 0)
+      SetTodo(todos);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(Todos));
