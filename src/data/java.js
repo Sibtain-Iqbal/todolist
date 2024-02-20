@@ -329,6 +329,15 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
+  const [iname, setiname] = useState('')
+  const [ipassword, setipasswoed] = useState('')
+
+
+
+  let handle = (e) => {
+    e.preventDefault()
+    alert(`this is the value of name ${iname} , '' this is the value of password : ${ipassword}`)
+  }
   // let changedata =(e)=>{
   //   setiname(e.target.value)
 
