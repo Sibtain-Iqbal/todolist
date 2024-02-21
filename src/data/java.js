@@ -334,6 +334,16 @@ function App() {
 
 
 
+  const deleteTodo = (id) => { // Fix: Add the 'id' parameter
+    SetTodo((prev) => prev.filter((prevTodo) => prevTodo.id !== id));
+  }
+
+  const toggleComplete = (id) => {
+    SetTodo(
+      (prev) => prev.map((prevTodo) => prevTodo.id === id ? { ...prevTodo, Completed: !prevTodo.Completed } : prevTodo)
+    );
+  }
+
   // local storage
 
   useEffect(() => {
