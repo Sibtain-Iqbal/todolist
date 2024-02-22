@@ -332,7 +332,13 @@ import TodoItem from './Components/TodoItem';
 function App() {
   const [Todos, SetTodo] = useState([]);
 
+  const addTodo = (todo) => {
+    SetTodo((prev) => [{ id: Date.now(), ...todo }, ...prev]);
+  }
 
+  const updateTodo = (todo, id) => {
+    SetTodo((prev) => prev.map((prevtodo) => prevtodo.id === id ? todo : prevtodo));
+  }
 
   const deleteTodo = (id) => { // Fix: Add the 'id' parameter
     SetTodo((prev) => prev.filter((prevTodo) => prevTodo.id !== id));
