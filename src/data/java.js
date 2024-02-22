@@ -345,6 +345,14 @@ function App() {
 
 
 
+  let [formdata , setFormData] = useState({
+    myname,
+    yourEmail,
+    phonename,
+    message,
+    index : ''
+  })
+
   let [usedata,setUserData] = useState([])
 
   const getValue = (e)=>{
