@@ -386,3 +386,20 @@ function App() {
 }
 
 export default App;
+
+
+import React, { useState } from 'react';
+import { questions } from './questions';
+
+function Faqs() {
+  const [activeFaqId, setActiveFaqId] = useState(null);
+
+ 
+}
+
+function FaqItem({ question, isActive, onToggle }) {
+
+  );
+}
+
+export default Faqs;
