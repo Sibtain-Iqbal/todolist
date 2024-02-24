@@ -398,7 +398,11 @@ function Faqs() {
 }
 
 function FaqItem({ question, isActive, onToggle }) {
-
+  return (
+    <div className='faqItem'>
+      <h2 onClick={onToggle}>{question.question}</h2>
+      <p className={isActive ? 'activeFaq' : 'inactiveFaq'}>{question.answer}</p>
+    </div>
   );
 }
 
