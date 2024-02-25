@@ -394,7 +394,17 @@ import { questions } from './questions';
 function Faqs() {
   const [activeFaqId, setActiveFaqId] = useState(null);
 
- 
+  const toggleFaq = (id) => {
+    // Toggle the FAQ: if it's already active, deactivate it, otherwise activate the selected FAQ
+    setActiveFaqId(activeFaqId === id ? null : id);
+  };
+
+  return (
+    <div>
+      <h1>Frequently Asked Questions (FAQs)</h1>
+     
+    </div>
+  );
 }
 
 function FaqItem({ question, isActive, onToggle }) {
