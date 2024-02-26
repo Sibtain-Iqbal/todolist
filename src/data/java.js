@@ -402,7 +402,16 @@ function Faqs() {
   return (
     <div>
       <h1>Frequently Asked Questions (FAQs)</h1>
-     
+      <div className='faqContainer'>
+        {questions.map(question => (
+          <FaqItem
+            key={question.id}
+            question={question}
+            isActive={activeFaqId === question.id}
+            onToggle={() => toggleFaq(question.id)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
