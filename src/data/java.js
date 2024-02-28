@@ -425,7 +425,17 @@ let handlesubmit = (e)=>{
                 />
               </div>
 
-              
+              <div className='first-input'>
+                <label>Phone</label>
+                <input
+                value={formdata.phonename}
+                type='text'
+                name='phonename'
+                onChange={getValue}
+                
+                />
+              </div>
+
              
            <button className='btn'>
             {index!== '' ?'Update':"SAve"}
