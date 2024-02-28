@@ -436,7 +436,15 @@ let handlesubmit = (e)=>{
                 />
               </div>
 
-             
+              <div className='first-input'>
+                <label>Message</label>
+                <textarea 
+                value={formdata.message}
+                className='form-control'
+                onChange={getValue}
+                name='message'
+                ></textarea>
+              </div>
            <button className='btn'>
             {index!== '' ?'Update':"SAve"}
            </button>
