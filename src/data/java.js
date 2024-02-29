@@ -453,7 +453,11 @@ const Apssp = () => {
         Convert
       </button>
       {result && (
-     
+        <div style={{ marginTop: '20px', fontSize: '20px' }}>
+          <p>
+            {amount} {fromCurrency} = {result} {toCurrency}
+          </p>
+        </div>
       )}
     </div>
   );
