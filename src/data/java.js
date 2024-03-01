@@ -448,7 +448,17 @@ const Apssp = () => {
   return (
     <div style={{ padding: '20px', textAlign: 'center' }}>
       <h1>Currency Converter</h1>
-     
+      <div style={{ marginBottom: '10px' }}>
+        <input
+          type="number"
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)}
+          style={{ padding: '5px', marginRight: '10px' }}
+        />
+       
+        <span>to</span>
+      
+      </div>
       <button onClick={convertCurrency} style={{ padding: '10px 20px' }}>
         Convert
       </button>
