@@ -455,7 +455,17 @@ const Apssp = () => {
           onChange={(e) => setAmount(e.target.value)}
           style={{ padding: '5px', marginRight: '10px' }}
         />
-       
+        <select
+          value={fromCurrency}
+          onChange={(e) => setFromCurrency(e.target.value)}
+          style={{ padding: '5px', marginRight: '10px' }}
+        >
+          {currencies.map((currency) => (
+            <option key={currency} value={currency}>
+              {currency}
+            </option>
+          ))}
+        </select>
         <span>to</span>
         <select
           value={toCurrency}
