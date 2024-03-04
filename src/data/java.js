@@ -440,6 +440,13 @@ const Apssp = () => {
 
 
 
+  useEffect(() => {
+    if (fromCurrency != null && toCurrency != null) {
+      fetch(`https://open.er-api.com/v6/latest/${fromCurrency}`)
+        .then(response => response.json())
+        .then(data => setExchangeRate(data.rates[toCurrency]));
+    }
+  }, [fromCurrency, toCurrency]);
 
   const convertCurrency = () => {
     setResult((amount * exchangeRate).toFixed(2));
