@@ -438,7 +438,14 @@ const Apssp = () => {
   const [exchangeRate, setExchangeRate] = useState(1);
   const [result, setResult] = useState(null);
 
-
+  useEffect(() => {
+    fetch('https://open.er-api.com/v6/latest/USD')
+      .then(response => response.json())
+      .then(data => {
+        setCurrencies([...Object.keys(data.rates)]);
+        setExchangeRate(data.rates[toCurrency]);
+      });
+  }, []);
 
   useEffect(() => {
     if (fromCurrency != null && toCurrency != null) {
