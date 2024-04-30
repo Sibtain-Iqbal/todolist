@@ -64,9 +64,9 @@ form button{
   list-style: none;
 }
 .outerDiv ul li{
-  color: white;
+  color: rgb(193, 15, 15);
   padding: 10px;
-  font-size: 25px;
+  font-size: 35px;
   margin-bottom: 20px;
   position: relative;
   text-align: left;
@@ -76,4 +76,10 @@ form button{
 .outerDiv ul li span{
   position: absolute;
   right: 15px;
+}
+
+.completetodo{
+  text-decoration: line-through;
+  color: rebeccapurple;
+  background-color: yellow !important;
 }
