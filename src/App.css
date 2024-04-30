@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+form {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+form input{
+  flex-basis: 70%;
+  height: 40px;
+}
+form button{
+  flex-basis: 20%;
+}
+
+.outerDiv{
+  width: 1170px;
+  margin: auto;
+ margin-top: 50px;
+
+}
+.outerDiv ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.outerDiv ul li{
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+  background: #000;
+}
+
+.outerDiv ul li span{
+  position: absolute;
+  right: 15px;
+}
