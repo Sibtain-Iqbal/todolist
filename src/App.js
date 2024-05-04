@@ -134,6 +134,21 @@ function App() {
       )
     })
 
+    const itemss = todolist.map((value,index) => {
+      return(
+        <Todoitemms
+
+        value ={value}
+        index = {index}
+        todolist={todolist}
+        settodolist={settodolist}
+
+        
+        key={index}/>  
+        
+      )
+    })
+
 
 
   
