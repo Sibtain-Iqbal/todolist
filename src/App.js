@@ -39,6 +39,29 @@ function App() {
       <div className='tabsouter'>
         <h2 style={{ textAlign: 'left' }} >law prep vision mission and values</h2>
 
+      <ul>
+        <li>
+          <button>object1</button>
+        </li>
+
+
+        <li>
+          <button>object2</button>
+        </li> 
+
+
+        <li>
+          <button>object3</button>
+        </li>
+
+        
+         <li>
+          <button>object4</button>
+        </li>
+
+
+      </ul>
+
       </div>
 
 

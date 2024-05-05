@@ -83,3 +83,31 @@ form button{
   color: rebeccapurple;
   background-color: yellow !important;
 }
+
+
+.tabsouter {
+  width: 1170px;
+  margin: auto;
+}
+
+.tabsouter ul{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 20px;
+}
+.tabsouter ul li {
+
+}
+
+
+
+
+
+button{
+  background-color: #000;
+  color: wheat  ;
+  border-radius: 20px;
+padding: 20px 50px;
+
+}
