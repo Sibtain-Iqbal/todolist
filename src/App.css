@@ -115,3 +115,8 @@ font-weight: 600;
 border: none;
 
 }
+
+.activebutton{
+  background-color: rebeccapurple !important;
+  color: white !important;
+}
