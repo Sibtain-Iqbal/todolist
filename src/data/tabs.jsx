@@ -1,4 +1,4 @@
-export const tasb = [
+export const tabs = [
     {
       "title": "Object 1",
       "description": "This is the description for the first object."

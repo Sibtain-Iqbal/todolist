@@ -1,7 +1,8 @@
 
 import './App.css';
 import { useState } from "react";
-import tabs from './data/tabs'
+import { tabs } from './data/tabs';
+
 function App() {
 
   const [todoList, settodoList] = useState([])
@@ -36,33 +37,53 @@ function App() {
 
   return (
     <div className="App">
+
+
+
+
+
+
+
+
+
+
+
       <div className='tabsouter'>
         <h2 style={{ textAlign: 'left' }} >law prep vision mission and values</h2>
 
       <ul>
-        <li>
-          <button>object1</button>
+       {tabs.map((tabsitem,index)=> {
+        return(
+          <li>
+          <button>{tabsitem.title}</button>
         </li>
 
-
-        <li>
-          <button>object2</button>
-        </li> 
-
-
-        <li>
-          <button>object3</button>
-        </li>
-
-        
-         <li>
-          <button>object4</button>
-        </li>
-
-
+        )
+       })}
+       
       </ul>
 
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
