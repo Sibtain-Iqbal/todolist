@@ -46,15 +46,10 @@ function App() {
 
 
 
+  const [activetabs ,setactivetabs] =useState(0)
+  const [tabsshow,settabsshow] =useState(tabs[0])
 
 
-
-  const [activetab, setactivetab] = useState(0)
-  const [tabshow, settabsshow] = useState(tabs[0])
-
-  const changebtncolor =(indexss)=>{
-    setactivetab(indexss)
-  }
 
 
   return (
@@ -64,22 +59,20 @@ function App() {
         <h2 style={{ textAlign: 'left' }} >law prep vision mission and values</h2>
 
         <ul>
-          {tabs.map((tabsitem, indexss) => {
-            // alert(indexss)
-            return (
+          
+          {tabs.map((tabsitems,index)=>{
+            return(
               <li>
-                <button onClick={()=>changebtncolor()} className={activetab==indexss? 'activebutton' : ''}>{tabsitem.title}</button>
+                <button className={activetabs ==index ? 'activebutton' : ''}>{tabsitems.title}</button>
               </li>
             )
           })}
 
         </ul>
-
-        {
-          tabshow !== undefined ?
-            <p>{tabshow.description}</p>
-            : ''
-        }
+      
+         {
+          tabsshow!==undefined ? <p>{tabsshow.description}</p> : <h1>this is undefines</h1>
+         }
 
 
       </div>

@@ -8,7 +8,7 @@ export const tabs = [
       "description": "This is the description for the second object."
     },
     {
-      "title": "Object 3",
+      "title": "vision",
       "description": "This is the description for the third object."
     },
     {
