@@ -2,6 +2,7 @@
 import './App.css';
 import { useState } from "react";
 import { tabs } from './data/tabs';
+import { tab } from '@testing-library/user-event/dist/tab';
 
 function App() {
 
@@ -50,7 +51,12 @@ function App() {
   const [tabsshow,settabsshow] =useState(tabs[0])
 
 
+let changedata=(index)=>{
+  setactivetabs(index)
+  settabsshow(tabs[index])
 
+
+}
 
   return (
     <div className="App">
@@ -59,11 +65,10 @@ function App() {
         <h2 style={{ textAlign: 'left' }} >law prep vision mission and values</h2>
 
         <ul>
-          
           {tabs.map((tabsitems,index)=>{
             return(
               <li>
-                <button className={activetabs ==index ? 'activebutton' : ''}>{tabsitems.title}</button>
+                <button onClick={()=>changedata(index)} className={activetabs ==index ? 'activebutton' : ''}>{tabsitems.title}</button>
               </li>
             )
           })}
