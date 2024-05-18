@@ -318,6 +318,14 @@ for (const value of array) {
     },
     {
       "title": "Object 63",
-      "description": "Description for Object
+      "description": "Description for Objec"
+
     }
 ]  
+let [formdata , setFormData] = useState({
+  myname,
+  yourEmail,
+  phonename,
+  message,
+  index : ''
+})
