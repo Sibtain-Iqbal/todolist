@@ -357,6 +357,11 @@ function App() {
 
   const getValue = (e)=>{
 
+    let oldData = {...formdata}
+    let inputName = e.target.name
+    let inputVALUE = e.target.value
+    oldData[inputName] = inputVALUE
+    setFormData(oldData)
   }
 let handlesubmit = (e)=>{
 
