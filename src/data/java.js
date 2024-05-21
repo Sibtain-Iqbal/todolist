@@ -385,7 +385,7 @@ function App() {
   )
 }
 
-export default App;
+export default Apsp;
 
 
 import React, { useState } from 'react';
@@ -426,3 +426,37 @@ function FaqItem({ question, isActive, onToggle }) {
 }
 
 export default Faqs;
+
+
+
+
+const Apssp = () => {
+  const [currencies, setCurrencies] = useState([]);
+  const [fromCurrency, setFromCurrency] = useState('USD');
+  const [toCurrency, setToCurrency] = useState('EUR');
+  const [amount, setAmount] = useState(1);
+  const [exchangeRate, setExchangeRate] = useState(1);
+  const [result, setResult] = useState(null);
+
+
+
+
+  const convertCurrency = () => {
+    setResult((amount * exchangeRate).toFixed(2));
+  };
+
+  return (
+    <div style={{ padding: '20px', textAlign: 'center' }}>
+      <h1>Currency Converter</h1>
+     
+      <button onClick={convertCurrency} style={{ padding: '10px 20px' }}>
+        Convert
+      </button>
+      {result && (
+     
+      )}
+    </div>
+  );
+};
+
+export default Apssp;
