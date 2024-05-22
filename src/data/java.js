@@ -430,7 +430,7 @@ export default Faqs;
 
 
 
-const Apssp = () => {
+const Apsp = () => {
   const [currencies, setCurrencies] = useState([]);
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('EUR');
