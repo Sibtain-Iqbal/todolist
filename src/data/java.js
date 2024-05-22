@@ -364,7 +364,13 @@ function App() {
     setFormData(oldData)
   }
 let handlesubmit = (e)=>{
-
+  let cureentUserdata = myname
+  yourEmail
+  phonename
+    message
+  e.preventDefault( )
+  let oldusedata = [...usedata,cureentUserdata]
+  setUserData(oldusedata)
 }
   return (
     <div className="App">
