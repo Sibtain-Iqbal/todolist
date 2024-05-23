@@ -374,7 +374,25 @@ let handlesubmit = (e)=>{
 }
   return (
     <div className="App">
-    
+      <div className='container'>
+     
+
+
+            <form className='forms' onSubmit={handlesubmit}>
+
+              
+
+              
+             
+           <button className='btn'>
+            {index!== '' ?'Update':"SAve"}
+           </button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 }
