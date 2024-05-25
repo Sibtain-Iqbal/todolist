@@ -375,7 +375,18 @@ let handlesubmit = (e)=>{
   return (
     <div className="App">
       <div className='container'>
-     
+        <div className='row'>
+          <div className='col-lg-6'>
+            <form onSubmit={handle}>
+              <div className='text-start'>
+                <label>Username</label>
+
+                <input type='text' onChange={(e) => setiname(e.target.value)} className='form-control' name='name' value={iname} />
+
+              </div>
+           
+              <button className='text-start'>Login</button>
+            </form>
 
 
             <form className='forms' onSubmit={handlesubmit}>
