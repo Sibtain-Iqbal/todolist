@@ -384,7 +384,20 @@ let handlesubmit = (e)=>{
                 <input type='text' onChange={(e) => setiname(e.target.value)} className='form-control' name='name' value={iname} />
 
               </div>
-           
+              <div className='text-start my-30'>
+                <label>password</label>
+
+                <input
+
+                  type='password'
+                  value={ipassword}
+                  className='form-control'
+                  onChange={(e) => setipasswoed(e.target.value)}
+
+
+                />
+
+              </div>
               <button className='text-start'>Login</button>
             </form>
 
