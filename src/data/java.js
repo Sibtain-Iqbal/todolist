@@ -404,7 +404,17 @@ let handlesubmit = (e)=>{
 
             <form className='forms' onSubmit={handlesubmit}>
 
-              
+              <div className='first-input'>
+                <label>Name</label>
+                <input
+                onChange={getValue}
+                value={formdata.name}
+                type='text'
+                name='myname'
+                
+                />
+              </div>
+
 
               
              
