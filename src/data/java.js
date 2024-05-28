@@ -415,6 +415,15 @@ let handlesubmit = (e)=>{
                 />
               </div>
 
+              <div className='first-input'>
+                <label>Email</label>
+                <input
+                value={formdata.yourEmail}
+                type='text'
+                name='yourEmail'
+                onChange={getValue}
+                />
+              </div>
 
               
              
